@@ -1,0 +1,72 @@
+<!-- login.component.html -->
+<div class="container">
+    <div class="left-column">
+      <!-- Add your image here -->
+      <!-- <img src="../../../assets/images/image7.jpeg" alt="Image"> -->
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dGVjaG5vbG9neXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+    </div>
+    <div class="right-column">
+      <form class="login-form" [formGroup]="signUpForm" >
+        
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Full Name</label>
+            <input type="text" class="form-control" formControlName="userName">
+          </div>
+          <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control"  formControlName="email">
+
+          <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" formControlName="password">
+        </div>
+        
+        <button type="submit" class="btn btn-primary" (click)="signUpUser()">Sign up</button>
+        <div class="mb-3 form-check">
+          <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1"> -->
+          <!-- <label class="form-check-label" for="exampleCheck1">sign up</label> -->
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  
+
+
+<!-- <h1>Hello</h1>
+<h1>The only way to do great work is to love what you do</h1> -->
+
+<!-- <div class="d-flex">
+  <form [formGroup]="todoForm">
+    <div class="">
+      <label>Add todo name</label>
+      <input formControlName="todoName" type="text" placeholder="Enter name" />
+    </div>
+    <div class="">
+      <label>Amount</label>
+      <input formControlName="amount" type="text" placeholder="Enter amount" />
+    </div>
+    <div class="ml-4" style="margin-left: 15px;">
+      <button class="btn btn-primary" (click)="addTodo()">Add To-Do</button>
+    </div>
+  </form>
+</div>
+
+<table class="table" style="margin-left: 50px; margin-right: 80px;">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Todo Names</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let task of todos; let i=index">
+      <th scope="row">{{i+1}}</th>
+      <td>{{task?.todoName}}</td>
+    </tr>
+
+  </tbody>
+</table> -->

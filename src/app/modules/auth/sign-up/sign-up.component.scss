@@ -1,0 +1,36 @@
+/* login.component.css */
+
+/* login.component.css */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+  }
+  
+  .left-column,
+  .right-column {
+    flex: 1; /* Equal flex distribution for both columns */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .left-column img {
+    width: 100%; /* Make the image fill the container */
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .login-form {
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .login-form button {
+    width: 100%; /* Make the button fill the container width */
+  }
